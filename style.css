@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Barra Superior -- Menu*/ /*npm run dev*/
+header{
+    position: fixed;
+    background: #509fc1;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.menuInicial h3{
+    color: #aad8f2;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.menuInicial span{
+    color: #125077;
+}
+
+.menuInicial img{
+    height: 4%;
+    width: 4%;
+    margin: -15px 0px 20px 0;
+    float: left;
+}
+
+.logo{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+    padding-top: 30px;
+    left: 0;
+    background:#6eabc5;
+    transition: 0.5s;
+    transition-property: left;
+    z-index: 100;
+}
+
+.logo .imagem{
+    height: 0;
+    width: 0;
+    float: left;
+}
+
+.logo a{
+    color: aliceblue;
+    display: block;
+    width: 100%;
+    line-height: 60px; /*Espaço entre opções*/
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.logo a:hover{
+    background: #1b5376;
+}
+
+.logo ion-icon{
+    padding-right: 20px;
+}
+
+label #logo-btn{
+    z-index: 1;
+    position: fixed;
+    left: 300px;
+    color: antiquewhite;
+    font-size: 30px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+.sino-btn{
+    z-index: 1;
+    position: fixed;
+    left: 300px;
+    color: antiquewhite;
+    font-size: 25px;
+    margin: 3px 0 0 1130px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+.user-btn{
+    z-index: 1;
+    position: fixed;
+    left: 300px;
+    color: antiquewhite;
+    font-size: 25px;
+    margin: 3px 0 0 1170px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #logo-btn:hover{
+    color: #1b5376;
+}
+
+#check:checked ~.logo{
+    left: -190px;
+}
+
+#check:checked ~.logo a span{
+    display: none;
+}
+
+#check:checked ~.logo a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+#check{
+    display: none;
+}
+/*Fim do menu*/
+
+.caixa-main{
+    margin: 0 auto 0 auto;
+    width: 350px;
+}
+
+.caixa-main h3{
+    Font-family: Arial;
+    padding: 200 5px 5px 17px;
+    margin-bottom: 5px; 
+    font-size: 17px;
+}
+
+.input-image{
+    display: none;
+}
+
+.output-text{
+    resize: none;
+    display: inline;
+    width: 100%;
+    min-height: 100px;
+    font-size: 1.5rem;
+    margin-top: 25px; /*Espaço entre botão e caixa*/
+    margin-bottom: 206px; /*Tela*/
+}
+
+.btnAdcImagens{ /*Button*/
+    margin: 250px 0 0 17px;
+    width: 90%;
+    padding: 10px 0;
+    background: #0b88ba;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.btnAdcImagens:active{
+    background: #2471a8;
+    transform: scale(1.1);
+}
+
+.btnAdcImagens:hover{
+    color: #011311; 
+    background: #38cbf8;
+}
+
+.preview{
+    display: inline;
+    width: 100%;
+    text-align: center;
+}
+
+.barraProgresso{
+    transition: width;
+    width: 0;
+    height: 20px;
+    background-color: green;
+}
+
+/* Corpo - Button para button */
+main{ /*Fundo*/
+    background: linear-gradient(#e3f5f5, #d5ebf1);
+}
+
+/*.home{
+    position: 800px 500px 0 0; 
+    height: 10vh;
+    left: 20px;
+    width: 500px;
+    background: red;
+    transition: var(--tran-05);
+}
+
+.logo .text{
+    font-size: 80px;
+    font-weight: 500px;
+    color: #000000;
+    padding: 100px 400px;
+}
+
+.logo ~ .home{
+    left: 40px;
+    width: calc(100% - 88px);
+}*/
+
+/*Rodapé*/
+footer{
+    text-align: center;
+    padding: 5px 0 30px;
+    background: #d5ebf1;
+}
+
+.copyright{
+    color: #000000;
+    font-size: 13px;
+    margin-top: 5px;
+}
